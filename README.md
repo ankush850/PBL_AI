@@ -9,23 +9,7 @@ This project is a PDF Summarizer powered by Google Gemini API. It allows users t
 
 🌐 Simple Flask-based web interface
 
-🗂️ Project Structure
-bash
-Copy
-Edit
-PBL_AI/
-├── app/                      # Core application logic
-├── __pycache__/             # Python cache files
-├── .env                     # Environment variables (contains API key)
-├── app.py                   # Flask app instance
-├── config.py                # Configuration settings
-├── main.py                  # Main logic for PDF summarization
-├── run.py                   # Entry point to start the app
-├── requirements.txt         # Python dependencies
-├── tempCodeRunnerFile.py    # Temporary dev file
-└── test_pdf_upload.py       # For testing PDF upload
-🧪 Tech Stack
-🐍 Python 3
+
 
 🔥 Flask – web framework
 
