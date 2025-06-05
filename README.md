@@ -23,7 +23,7 @@ Clone the Repository
 bash
 Copy
 Edit
-git clone https://github.com/ankush850/PBL_AI.git
+git https://github.com/ankush850/-PDF-Summarizer-using-Gemini-API.git
 cd PBL_AI
 Create Virtual Environment
 
