@@ -1,1 +1,1 @@
-enai.GenerativeModel("gemini-1.5-pro-latest")
+ 
