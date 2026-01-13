@@ -1,73 +1,143 @@
-This project is a PDF Summarizer powered by Google Gemini API. It allows users to upload PDF documents and receive concise summaries using advanced generative AI. This project was developed as part of a Project-Based Learning (PBL) initiative.
+# 📄 PDF Summarizer using Gemini API
 
-🚀 Features
-📄 Upload and parse PDF files
+A simple web application that lets you upload PDF files and get short, clear summaries using **Google Gemini API**. Built with **Flask** and **Python**.
 
-✨ Summarize content using Gemini API
+---
 
-🧠 Uses generative AI to understand and condense large texts
+## 🚀 What this project does
 
-🌐 Simple Flask-based web interface
+- Upload a PDF file  
+- Extract text from the PDF  
+- Send text to Gemini API  
+- Get an AI-generated summary  
 
+---
 
+## ✨ Features
 
-🔥 Flask – web framework
+- PDF upload support  
+- Automatic text extraction  
+- Fast AI summarization  
+- Simple Flask web interface  
 
-📄 PyMuPDF – for PDF parsing
+---
 
-🌐 Google Gemini API – for AI summarization
+## 🧰 Tech Stack
 
-🔑 Setup Instructions
-Clone the Repository
+- Python  
+- Flask  
+- PyMuPDF (PDF text extraction)  
+- Google Gemini API  
+- python-dotenv  
 
-bash
-Copy
-Edit
-git https://github.com/ankush850/-PDF-Summarizer-using-Gemini-API.git
-cd PBL_AI
-Create Virtual Environment
+---
 
-bash
-Copy
-Edit
+## 📁 Project Structure
+
+```
+PDF-Summarizer-using-Gemini-API/
+│
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   └── utils.py
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│
+├── run.py
+├── test_pdf_upload.py
+├── requirements.txt
+└── .env
+```
+
+---
+
+## ⚙️ Setup (Run Locally)
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/ankush850/-PDF-Summarizer-using-Gemini-API.git
+cd -PDF-Summarizer-using-Gemini-API
+```
+
+---
+
+### 2️⃣ Create virtual environment
+
+```bash
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-Install Dependencies
+```
 
-bash
-Copy
-Edit
+Activate it:
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install dependencies
+
+```bash
 pip install -r requirements.txt
-Set Gemini API Key
+```
 
-Create a .env file in the root folder:
+---
 
-env
-Copy
-Edit
+### 4️⃣ Add Gemini API Key
+
+Create a `.env` file in the root folder:
+
+```env
 GEMINI_API_KEY=your_api_key_here
-Run the Application
+```
 
-bash
-Copy
-Edit
+---
+
+## ▶️ Run the Application
+
+```bash
 python run.py
-Open in Browser
+```
 
-Navigate to http://127.0.0.1:5000/ to use the app.
+Open browser and go to:
 
-📌 Example Use Case
-Upload a PDF (e.g., research paper or notes).
+```
+http://127.0.0.1:5000/
+```
 
-The app extracts the content.
+---
 
-Gemini API summarizes the content in natural language.
+## 🧪 Test PDF Upload
 
-Summary is shown on the web interface.
+```bash
+python test_pdf_upload.py
+```
 
-👨‍💻 Contributors
-@ankush850
+---
 
-@Shivans2002
+## ⚠️ Notes
 
-@Jay2849
+- Internet connection is required  
+- Large PDFs may take more time  
+- Invalid API key will cause summarization failure  
+
+---
+
+## 👥 Contributors
+
+- Ankush Rawat  
+- Shivansh  
+- Jay  
+
+---
